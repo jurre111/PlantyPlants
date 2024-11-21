@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/index.html"><img width="90" height="58" src="images/image.png" alt=""></a>
+        <a href="index.html"><h1 style="margin:0px; margin-right: 125px;">Planty Plants</h1></a>
+        <h3 style="margin:0px 10px;"><a class="page-link" href="index.html">Home</a></h3>
+        <h3 style="margin:0px 30px;"><a class="pages" href="html/Library.html">Library</a></h3>
+        <h3 style="margin:0px 30px;"><a class="pages" href="html/Upload.html">Upload</a></h3>
+        <h3 style="margin:0px 30px;"><a class="pages" href="html/History.html">Progress</a></h3>
+        <div class="dropdown" style="margin-left: auto; margin-right: 20px;">
+            <button onclick="toggleDropdown()" class="settingsButton">
+                <img height="30" width="30" src="images/Settings.svg" alt="">
+            </button>            
+            <div id="myDropdown" class="dropdown-content">
+                <div class="container">
+                    <img style="margin-left: 15px;" src="/images/account_circle.svg">
+                    <a style="margin-left: -8px;" href="#">My Account</a>
+                </div>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </div>
+
+    <h2 style="margin-left: 40px;">Tips</h2>
+    <div class="container2">
+        <div onmouseover="Expand(this)" onmouseout="Collapse(this)" style="margin-left: 40px; " class="img-tile">
+            <h3 style="text-align: center;">Water Properly</h3>
+            <img width="190px" height="136px" src="images/plant1.png" alt="">
+            <p style="display: none; text-align: center; padding: 10px;">Make sure to water your plants regularly to keep them healthy and growing.</p>
+        </div>
+        <div onmouseover="Expand(this)" onmouseout="Collapse(this)" style="margin-left: 40px; background-color: #14A04C;" class="img-tile">
+            <h3 style="text-align: center;">Place Correctly</h3>
+            <img width="100px" height="136px" src="images/plant2.png" alt="">
+            <p style="display: none; text-align: center; padding: 10px;">Make sure to not place your tulips in direct sunlight.</p>
+        </div> 
+        <div onmouseover="Expand(this)" onmouseout="Collapse(this)" style="margin-left: 40px; background-color: #058740;" class="img-tile">
+            <h3 style="text-align: center;">Manage Humidity</h3>
+            <img width="100px" height="136px" src="images/plant3.png" alt="">
+            <p style="display: none; text-align: center; padding: 10px;">The Calathea needs a high humidity environment, place it near a humidifier.</p>
+        </div>  
+        <div onmouseover="Expand2(this)" onmouseout="Collapse2(this)" style="margin-left: 40px; background-color: #04612E;" class="img-tile">
+            <h3 style="text-align: center;">Optimal Temperature</h3>
+            <img width="190px" height="156px" src="images/plant4.png" alt="">
+            <p style="display: none; text-align: center; padding: 10px;">The Maranta needs to be placed in a environment at or above room temperature.</p>
+        </div>  
+        <div onmouseover="Expand(this)" onmouseout="Collapse(this)" style="margin-left: 40px; background-color: #034e25;" class="img-tile">
+            <h3 style="text-align: center;">Water Properly</h3>
+            <img width="140px" height="140px" src="images/plant5.png" alt="">
+            <p style="display: none; text-align: center; padding: 10px;">Place your Anthurium in a well-draining soil with organic matter, orchid mix will do.</p>
+        </div>     
+    </div> 
+    <h2 style="margin-left: 40px; margin-top: 40px;">Growing Plants</h2>
+    <div class="container2">
+        <div onmouseover="Expand(this)" onmouseout="Collapse(this)" style="margin-left: 40px; " class="img-tile">
+            <h3 style="text-align: center;">Rubber Plant</h3>
+            <img width="190px" height="136px" src="images/plant1.png" alt="">
+            <p style="display: none; text-align: center; padding: 10px;">Make sure to water your plants regularly to keep them healthy and growing.</p>
+        </div>
+
+        <div onmouseover="Expand(this)" onmouseout="Collapse(this)" style="margin-left: 40px; background-color: #14A04C;" class="img-tile">
+            <h3 style="text-align: center;">Monstera</h3>
+            <img width="100px" height="136px" src="images/plant2.png" alt="">
+            <p style="display: none; text-align: center; padding: 10px;">Make sure to not place your tulips in direct sunlight.</p>
+        </div> 
+        <div onmouseover="Expand(this)" onmouseout="Collapse(this)" style="margin-left: 40px; background-color: #058740;" class="img-tile">
+            <h3 style="text-align: center;">Snake Plant</h3>
+            <img width="100px" height="136px" src="images/plant3.png" alt="">
+            <p style="display: none; text-align: center; padding: 10px;">The Calathea needs a high humidity environment, place it near a humidifier.</p>
+        </div>  
+        <div onmouseover="Expand2(this)" onmouseout="Collapse2(this)" style="margin-left: 40px; background-color: #04612E;" class="img-tile">
+            <h3 style="text-align: center;">Peace Lily</h3>
+            <img width="190px" height="156px" src="images/plant4.png" alt="">
+            <p style="display: none; text-align: center; padding: 10px;">The Maranta needs to be placed in a environment at or above room temperature.</p>
+        </div>  
+        <div onmouseover="Expand(this)" onmouseout="Collapse(this)" style="margin-left: 40px; background-color: #034e25;" class="img-tile">
+            <h3 style="text-align: center;">Pothos</h3>
+            <img width="140px" height="140px" src="images/plant5.png" alt="">
+            <p style="display: none; text-align: center; padding: 10px;">Place your Anthurium in a well-draining soil with organic matter, orchid mix will do.</p>
+        </div>   
+    </div>
+    <div class="bottom-page">
+        <div class="container" style="margin-top: 40px;">
+            <img style="margin-left: 70px;" width="150" height="86" src="images/image.png" alt="">
+            <h3 style="margin-left: 10px;"><a class="pages" href="index.html">Home</a></h3>
+            <h3 style="margin-left: 60px;"><a class="pages" href="html/Library.html">Library</a></h3>
+            <h3 style="margin-left: 60px;"><a class="pages" href="html/Upload.html">Upload</a></h3>
+            <h3 style="margin-left: 60px;"><a class="pages" href="html/History.html">Progress</a></h3>
+            <h3 style="margin-left: 60px;"><a class="pages" href="mailto:support@example.com">Contact Us</a></h3>
+            <h3 style="margin-left: 60px;"><a class="pages" href="#">Privacy Policy</a></h3>
+            <a href="https://instagram.com/@example"><img style="margin-left: 50px;" src="images/insta.png" height="30px" width="30px" alt=""></a>
+            <a href="https://facebook.com/@example"><img style="margin-left: 15px;" src="images/facebook.png" height="25px" width="25px" alt=""></a>
+            <a href="https://youtube.com/@example"><img style="margin-left: 15px;" src="images/youtube.png" height="35px" width="35px" alt=""></a>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

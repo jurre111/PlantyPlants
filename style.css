@@ -1,0 +1,173 @@
+body {
+    background-color:  #181F1C;
+    font-family: Arial, sans-serif;
+    background-image: url('images/grass.png'); /* Path to your grass image */
+    background-repeat: repeat-x; /* Repeat the image horizontally */
+    background-position: bottom; /* Align the grass to the bottom */
+    background-size: auto 100px; /* Adjust the height to fit; keeps the aspect ratio */
+}
+
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.pages {
+    color: white;
+    transition: color 0.2   s ease;
+}
+
+h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none; /* Verwijdert de onderstreping */
+    color: inherit; /* Neemt de kleur over van het h4-element */
+}
+
+.pages:hover {
+    color: grey;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+
+button {
+    background: none; /* Geen achtergrond */
+    border: none; /* Geen rand */
+    padding: 0; /* Geen interne marge */
+    cursor: pointer; /* Handcursor bij hover */
+}
+
+button img {
+    display: block; /* Zorg dat de afbeelding correct rendert */
+}
+
+
+  
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    z-index: 10;
+}
+  
+
+
+.dropdown a:hover {
+    color: rgb(145, 145, 145);
+}
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #161616;
+    min-width: 300px;
+    border-radius: 10px;
+    right: 0;
+    border: 1px solid white;
+}
+
+.show {
+    display: block;
+}
+
+
+.page-link {
+    position: relative;
+    display: inline-block;  /* Zorgt ervoor dat de achtergrond zich aanpast aan de tekstgrootte */
+    padding: 10px 20px;  /* Voeg wat ruimte toe rondom de tekst */
+    border-radius: 20px;  /* Maak de hoeken afgerond */
+    background-color: #e2e6de;  /* Kies een achtergrondkleur */
+    color: rgb(0, 0, 0);  /* Zet de tekstkleur naar wit */
+    text-decoration: none;  /* Verwijder de onderstreping */
+}
+
+.page-link:hover {
+    background-color: #a8a8a8;  /* Verander de kleur bij hover */
+}
+
+.container2 {
+    display: flex;
+    align-items: stretch; /* Ensures all items are the same height */
+    gap: 20px; /* Adds spacing between tiles */
+}
+
+.img-tile {
+    position: relative;
+    display: inline-block;
+    width: 196px;
+    height: 220px;
+    border-radius: 20px;
+    background-color: #17C15B;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    overflow: hidden;
+    transition: height 0.4s ease;
+}
+
+.img-tile img {
+    display: block;
+    margin: 0 auto;
+}
+
+.img-tile p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+
+
+.upload {
+    margin-left: 40px;
+    width: 196px;
+    height: 220px;
+    background-color: #ffffff23;
+    border-radius: 20px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Segoe UI', sans-serif;    
+    border: 2px dashed white;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 200px;
+  }
+
+.upload:hover {
+    background-color: #ffffff11;
+}
+
+.bottom-page {
+    height: 200px;
+    width: 98.5vw;
+    border-top: dashed 1px rgba(255, 255, 255, 0.445);
+    margin-top: 70px;
+    margin-left: -8px;
+    
+}
